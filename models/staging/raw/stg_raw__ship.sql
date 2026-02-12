@@ -12,7 +12,7 @@ renamed as (
         orders_id,
         shipping_fee,
         -- shipping_fee_1, skipping since it's same as shipping_fee
-        logcost,
+        logcost AS log_cost,
         SAFE_CAST(ship_cost AS int64) AS ship_cost
 
     from source
